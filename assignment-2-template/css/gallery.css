@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e6f7ff; /* Light blue background */
+    color: #333;
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #00509e;
+    margin-bottom: 20px;
+}
+
+/* Gallery Section */
+#gallery {
+    max-width: 800px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Featured Image Styling */
+figure {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+figure img:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Thumbnail List Styling */
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* Thumbnail Image Styling */
+ul li img {
+    cursor: pointer;
+    width: 120px;
+    height: auto;
+    transition: filter 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover Effect for Thumbnails */
+ul li img:hover {
+    filter: none;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Selected Thumbnail */
+ul li img.active {
+    filter: none;
+    border: 3px solid #00509e; /* Blue border for selected thumbnail */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
